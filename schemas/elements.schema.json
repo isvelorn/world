@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/isvelorn/world/blob/main/schemas/elements.schema.json",
+  "title": "ISVELORN elements registry v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "status",
+    "elements",
+    "proposed_elements"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "const": "partial-canon"
+    },
+    "elements": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name_ru",
+          "symbol",
+          "status"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^element\\.[a-z_]+$"
+          },
+          "name_ru": {
+            "type": "string",
+            "minLength": 1
+          },
+          "symbol": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "const": "canon"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "proposed_elements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name_ru",
+          "status"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^element\\.[a-z_]+$"
+          },
+          "name_ru": {
+            "type": "string"
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "status": {
+            "const": "proposed"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
