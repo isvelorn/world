@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "status": "partial-canon",
+  "elements": [
+    {
+      "id": "element.water",
+      "name_ru": "Вода",
+      "symbol": "💙",
+      "status": "canon"
+    },
+    {
+      "id": "element.earth",
+      "name_ru": "Земля",
+      "symbol": "🤎",
+      "status": "canon"
+    },
+    {
+      "id": "element.fire",
+      "name_ru": "Огонь",
+      "symbol": "❤️",
+      "status": "canon"
+    },
+    {
+      "id": "element.air",
+      "name_ru": "Воздух",
+      "symbol": "🤍",
+      "status": "canon"
+    },
+    {
+      "id": "element.nature",
+      "name_ru": "Природа",
+      "symbol": "💚",
+      "status": "canon"
+    },
+    {
+      "id": "element.electricity",
+      "name_ru": "Электричество",
+      "symbol": "🩷",
+      "status": "canon"
+    },
+    {
+      "id": "element.light",
+      "name_ru": "Свет",
+      "symbol": "💛",
+      "status": "canon"
+    },
+    {
+      "id": "element.darkness",
+      "name_ru": "Тьма",
+      "symbol": "🖤",
+      "status": "canon",
+      "note": "Independent powerful magic, difficult to master; not absence of light."
+    },
+    {
+      "id": "element.sound",
+      "name_ru": "Звук",
+      "symbol": "🩶",
+      "status": "canon"
+    }
+  ],
+  "proposed_elements": [
+    {
+      "id": "element.cold",
+      "name_ru": "Холод",
+      "symbol": "🩵",
+      "status": "proposed",
+      "note": "Not approved; consider temperature and heat symmetry."
+    }
+  ]
+}
